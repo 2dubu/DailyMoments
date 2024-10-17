@@ -129,4 +129,4 @@ iOSInjectionProject/
 **/xcshareddata/WorkspaceSettings.xcsettings
 
 # Configuration Files
-Secret.xcconfigs
+*/*.xcconfig
