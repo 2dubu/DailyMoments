@@ -34,13 +34,7 @@ struct MainView: View {
             }
         }
         .navigationDestination(isPresented: $showWriteView) {
-            WriteView()
+            WriteView(imageUrl: selectedImageUrl)
         }
-    }
-}
-
-struct WriteView: View {
-    var body: some View {
-        Text("aa")
     }
 }
