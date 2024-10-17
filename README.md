@@ -1,2 +1,2 @@
 # DailyMoments
-Recall your days with simple keywords.
+Repository for Design thinking(SWCON10300) Interim Report.
