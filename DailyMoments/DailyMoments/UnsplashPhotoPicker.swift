@@ -10,9 +10,14 @@ import UnsplashPhotoPicker
 
 struct UnsplashImagePicker: UIViewControllerRepresentable {
     @Binding private var selectedImageUrl: URL?
+    private var completion: () -> Void?
 
-    init(selectedImageUrl: Binding<URL?>) {
+    init(
+        selectedImageUrl: Binding<URL?>,
+        completion: @escaping () -> Void = {}
+    ) {
         self._selectedImageUrl = selectedImageUrl
+        self.completion = completion
     }
 
     private var configuration: UnsplashPhotoPickerConfiguration {
@@ -55,6 +60,7 @@ struct UnsplashImagePicker: UIViewControllerRepresentable {
         ) {
             guard let photoURL = photos.first?.links[.download] else { return }
             parent.selectedImageUrl = photoURL
+            parent.completion()
             print(photoURL)
         }
         

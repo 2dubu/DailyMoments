@@ -8,23 +8,27 @@
 
 /* Begin PBXBuildFile section */
 		C6BE26CC2CC0F1CF00A1F088 /* DailyMomentsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6BE26CB2CC0F1CF00A1F088 /* DailyMomentsApp.swift */; };
-		C6BE26CE2CC0F1CF00A1F088 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6BE26CD2CC0F1CF00A1F088 /* ContentView.swift */; };
+		C6BE26CE2CC0F1CF00A1F088 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6BE26CD2CC0F1CF00A1F088 /* MainView.swift */; };
 		C6BE26D02CC0F1D100A1F088 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C6BE26CF2CC0F1D100A1F088 /* Assets.xcassets */; };
 		C6BE26D32CC0F1D100A1F088 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C6BE26D22CC0F1D100A1F088 /* Preview Assets.xcassets */; };
 		C6BE26DB2CC0F42F00A1F088 /* UnsplashPhotoPicker in Frameworks */ = {isa = PBXBuildFile; productRef = C6BE26DA2CC0F42F00A1F088 /* UnsplashPhotoPicker */; };
 		C6BE26DD2CC0FBD600A1F088 /* Secret.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = C6BE26DC2CC0FBD600A1F088 /* Secret.xcconfig */; };
 		C6BE26E22CC0FD9600A1F088 /* UnsplashPhotoPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6BE26E12CC0FD9600A1F088 /* UnsplashPhotoPicker.swift */; };
+		C6BE26E42CC106DA00A1F088 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6BE26E32CC106DA00A1F088 /* RootView.swift */; };
+		C6BE26E62CC1085200A1F088 /* ArchiveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6BE26E52CC1085200A1F088 /* ArchiveView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		C6BE26C82CC0F1CF00A1F088 /* DailyMoments.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DailyMoments.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6BE26CB2CC0F1CF00A1F088 /* DailyMomentsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyMomentsApp.swift; sourceTree = "<group>"; };
-		C6BE26CD2CC0F1CF00A1F088 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		C6BE26CD2CC0F1CF00A1F088 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		C6BE26CF2CC0F1D100A1F088 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C6BE26D22CC0F1D100A1F088 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		C6BE26DC2CC0FBD600A1F088 /* Secret.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Secret.xcconfig; sourceTree = "<group>"; };
 		C6BE26E02CC0FCFC00A1F088 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		C6BE26E12CC0FD9600A1F088 /* UnsplashPhotoPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnsplashPhotoPicker.swift; sourceTree = "<group>"; };
+		C6BE26E32CC106DA00A1F088 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+		C6BE26E52CC1085200A1F088 /* ArchiveView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArchiveView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,7 +65,9 @@
 			children = (
 				C6BE26E02CC0FCFC00A1F088 /* Info.plist */,
 				C6BE26CB2CC0F1CF00A1F088 /* DailyMomentsApp.swift */,
-				C6BE26CD2CC0F1CF00A1F088 /* ContentView.swift */,
+				C6BE26E32CC106DA00A1F088 /* RootView.swift */,
+				C6BE26CD2CC0F1CF00A1F088 /* MainView.swift */,
+				C6BE26E52CC1085200A1F088 /* ArchiveView.swift */,
 				C6BE26E12CC0FD9600A1F088 /* UnsplashPhotoPicker.swift */,
 				C6BE26CF2CC0F1D100A1F088 /* Assets.xcassets */,
 				C6BE26D12CC0F1D100A1F088 /* Preview Content */,
@@ -154,7 +160,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C6BE26CE2CC0F1CF00A1F088 /* ContentView.swift in Sources */,
+				C6BE26E42CC106DA00A1F088 /* RootView.swift in Sources */,
+				C6BE26CE2CC0F1CF00A1F088 /* MainView.swift in Sources */,
+				C6BE26E62CC1085200A1F088 /* ArchiveView.swift in Sources */,
 				C6BE26E22CC0FD9600A1F088 /* UnsplashPhotoPicker.swift in Sources */,
 				C6BE26CC2CC0F1CF00A1F088 /* DailyMomentsApp.swift in Sources */,
 			);
