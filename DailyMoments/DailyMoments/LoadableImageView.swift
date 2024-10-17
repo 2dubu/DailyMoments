@@ -30,14 +30,11 @@ struct LoadableImageView: View {
                             withAnimation(.easeInOut(duration: 0.4)) { isLoaded = true }
                         }
                 case .failure:
-                    ProgressView()
+                    EmptyView()
                 @unknown default:
                     EmptyView()
                 }
             }
-        }
-        .onAppear {
-            isLoaded = false
         }
     }
 }

@@ -19,7 +19,7 @@ struct UnsplashImagePicker: UIViewControllerRepresentable {
         self._selectedImageUrl = selectedImageUrl
         self.completion = completion
     }
-
+    
     private var configuration = UnsplashPhotoPickerConfiguration(
         accessKey: Bundle.main.infoDictionary?["ACCESS_KEY"] as? String ?? "",
         secretKey: Bundle.main.infoDictionary?["SECRET_KEY"] as? String ?? "",

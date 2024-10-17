@@ -17,27 +17,36 @@ struct MainView: View {
     var body: some View {
         NavigationView {
             VStack(spacing: 10) {
-                Text("How was your day?")
-                    .font(.system(size: 30, weight: .regular))
-                
-                Text("Please keep track of your day today.")
-                    .fontWeight(.light)
-                    .padding(.bottom, 40)
-                
-                Button("go to write →") {
-                    isPickerPresented.toggle()
-                }
-                .foregroundStyle(.black.opacity(0.6))
+                headerView
+                navigationButton
             }
             .navigationTitle("Home")
+            .navigationDestination(isPresented: $showWriteView) {
+                WriteView(imageUrl: selectedImageUrl)
+            }
             .sheet(isPresented: $isPickerPresented) {
                 UnsplashImagePicker(selectedImageUrl: $selectedImageUrl) {
                     showWriteView = true
                 }
             }
-            .navigationDestination(isPresented: $showWriteView) {
-                WriteView(imageUrl: selectedImageUrl)
-            }
         }
+    }
+    
+    private var headerView: some View {
+        VStack {
+            Text("How was your day?")
+                .font(.system(size: 30, weight: .regular))
+            
+            Text("Please keep track of your day today.")
+                .fontWeight(.light)
+                .padding(.bottom, 40)
+        }
+    }
+    
+    private var navigationButton: some View {
+        Button("Go to Write →") {
+            isPickerPresented.toggle()
+        }
+        .foregroundStyle(.black.opacity(0.6))
     }
 }
