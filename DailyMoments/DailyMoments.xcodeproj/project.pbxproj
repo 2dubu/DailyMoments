@@ -19,6 +19,7 @@
 		C6BE26E82CC10EAB00A1F088 /* LoadableImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6BE26E72CC10EAB00A1F088 /* LoadableImageView.swift */; };
 		C6BE26EA2CC10EFC00A1F088 /* WriteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6BE26E92CC10EFC00A1F088 /* WriteView.swift */; };
 		C6BE26ED2CC119BF00A1F088 /* ShadowStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6BE26EC2CC119BF00A1F088 /* ShadowStyle.swift */; };
+		C6BE26EF2CC1236D00A1F088 /* DiaryManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6BE26EE2CC1236D00A1F088 /* DiaryManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,7 @@
 		C6BE26E72CC10EAB00A1F088 /* LoadableImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadableImageView.swift; sourceTree = "<group>"; };
 		C6BE26E92CC10EFC00A1F088 /* WriteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WriteView.swift; sourceTree = "<group>"; };
 		C6BE26EC2CC119BF00A1F088 /* ShadowStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShadowStyle.swift; sourceTree = "<group>"; };
+		C6BE26EE2CC1236D00A1F088 /* DiaryManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +97,7 @@
 		C6BE26EB2CC119B300A1F088 /* Helper */ = {
 			isa = PBXGroup;
 			children = (
+				C6BE26EE2CC1236D00A1F088 /* DiaryManager.swift */,
 				C6BE26EC2CC119BF00A1F088 /* ShadowStyle.swift */,
 			);
 			path = Helper;
@@ -179,6 +182,7 @@
 			files = (
 				C6BE26E42CC106DA00A1F088 /* RootView.swift in Sources */,
 				C6BE26CE2CC0F1CF00A1F088 /* MainView.swift in Sources */,
+				C6BE26EF2CC1236D00A1F088 /* DiaryManager.swift in Sources */,
 				C6BE26E62CC1085200A1F088 /* ArchiveView.swift in Sources */,
 				C6BE26ED2CC119BF00A1F088 /* ShadowStyle.swift in Sources */,
 				C6BE26E22CC0FD9600A1F088 /* UnsplashPhotoPicker.swift in Sources */,

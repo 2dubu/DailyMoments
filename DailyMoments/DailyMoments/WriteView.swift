@@ -25,7 +25,7 @@ struct WriteView: View {
                     .padding(20)
                     .myShadow2()
                 
-                TextField("오늘의 이야기를 풀어주세요", text: $content)
+                TextField("Write your today's story", text: $content)
                     .focused($isFocused)
                     .multilineTextAlignment(.leading)
                     .padding(.horizontal, 20)
@@ -35,6 +35,7 @@ struct WriteView: View {
             .scrollIndicators(.never)
             
             Button {
+                DiaryManager.shared.saveEntry(imageUrl: imageUrl, content: content, date: Date())
                 
             } label: {
                 RoundedRectangle(cornerRadius: 10)

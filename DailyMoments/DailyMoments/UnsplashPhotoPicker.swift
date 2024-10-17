@@ -20,21 +20,11 @@ struct UnsplashImagePicker: UIViewControllerRepresentable {
         self.completion = completion
     }
 
-    private var configuration: UnsplashPhotoPickerConfiguration {
-        UnsplashPhotoPickerConfiguration(
-            accessKey: accessKey,
-            secretKey: secretKey,
-            allowsMultipleSelection: false
-        )
-    }
-
-    private var accessKey: String {
-        Bundle.main.infoDictionary?["ACCESS_KEY"] as? String ?? ""
-    }
-
-    private var secretKey: String {
-        Bundle.main.infoDictionary?["SECRET_KEY"] as? String ?? ""
-    }
+    private var configuration = UnsplashPhotoPickerConfiguration(
+        accessKey: Bundle.main.infoDictionary?["ACCESS_KEY"] as? String ?? "",
+        secretKey: Bundle.main.infoDictionary?["SECRET_KEY"] as? String ?? "",
+        allowsMultipleSelection: false
+    )
     
     func makeUIViewController(context: UIViewControllerRepresentableContext<UnsplashImagePicker>) -> UnsplashPhotoPicker {
         let unsplashPhotoPicker = UnsplashPhotoPicker(configuration: configuration)

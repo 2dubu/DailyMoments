@@ -15,26 +15,29 @@ struct MainView: View {
     @State private var showWriteView = false
     
     var body: some View {
-        VStack(spacing: 10) {
-            Text("DailyMoments")
-                .font(.system(size: 30, weight: .regular))
-            
-            Text("오늘도 당신의 하루를 기록해주세요.")
-                .fontWeight(.ultraLight)
-                .padding(.bottom, 40)
-            
-            Button("기록하러 가기 →") {
-                isPickerPresented.toggle()
+        NavigationView {
+            VStack(spacing: 10) {
+                Text("How was your day?")
+                    .font(.system(size: 30, weight: .regular))
+                
+                Text("Please keep track of your day today.")
+                    .fontWeight(.light)
+                    .padding(.bottom, 40)
+                
+                Button("go to write →") {
+                    isPickerPresented.toggle()
+                }
+                .foregroundStyle(.black.opacity(0.6))
             }
-            .foregroundStyle(.black.opacity(0.6))
-        }
-        .sheet(isPresented: $isPickerPresented) {
-            UnsplashImagePicker(selectedImageUrl: $selectedImageUrl) {
-                showWriteView = true
+            .navigationTitle("Home")
+            .sheet(isPresented: $isPickerPresented) {
+                UnsplashImagePicker(selectedImageUrl: $selectedImageUrl) {
+                    showWriteView = true
+                }
             }
-        }
-        .navigationDestination(isPresented: $showWriteView) {
-            WriteView(imageUrl: selectedImageUrl)
+            .navigationDestination(isPresented: $showWriteView) {
+                WriteView(imageUrl: selectedImageUrl)
+            }
         }
     }
 }
