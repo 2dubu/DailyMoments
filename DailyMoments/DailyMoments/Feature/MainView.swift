@@ -33,7 +33,7 @@ struct MainView: View {
     }
     
     private var headerView: some View {
-        VStack {
+        VStack(spacing: 12) {
             Text("How was your day?")
                 .font(.system(size: 30, weight: .regular))
             
