@@ -51,6 +51,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C642B65F2CCD1AFC0083A6C1 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				C6BE26CB2CC0F1CF00A1F088 /* DailyMomentsApp.swift */,
+				C6BE26E32CC106DA00A1F088 /* RootView.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		C642B6602CCD1B050083A6C1 /* Feature */ = {
+			isa = PBXGroup;
+			children = (
+				C6BE26CD2CC0F1CF00A1F088 /* MainView.swift */,
+				C6BE26E92CC10EFC00A1F088 /* WriteView.swift */,
+				C6BE26E52CC1085200A1F088 /* ArchiveView.swift */,
+			);
+			path = Feature;
+			sourceTree = "<group>";
+		};
+		C642B6612CCD1B120083A6C1 /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				C6BE26E12CC0FD9600A1F088 /* UnsplashPhotoPicker.swift */,
+				C6BE26E72CC10EAB00A1F088 /* LoadableImageView.swift */,
+			);
+			path = Component;
+			sourceTree = "<group>";
+		};
 		C6BE26BF2CC0F1CF00A1F088 = {
 			isa = PBXGroup;
 			children = (
@@ -72,14 +100,10 @@
 			isa = PBXGroup;
 			children = (
 				C6BE26E02CC0FCFC00A1F088 /* Info.plist */,
-				C6BE26CB2CC0F1CF00A1F088 /* DailyMomentsApp.swift */,
-				C6BE26E32CC106DA00A1F088 /* RootView.swift */,
+				C642B65F2CCD1AFC0083A6C1 /* App */,
 				C6BE26EB2CC119B300A1F088 /* Helper */,
-				C6BE26CD2CC0F1CF00A1F088 /* MainView.swift */,
-				C6BE26E92CC10EFC00A1F088 /* WriteView.swift */,
-				C6BE26E52CC1085200A1F088 /* ArchiveView.swift */,
-				C6BE26E12CC0FD9600A1F088 /* UnsplashPhotoPicker.swift */,
-				C6BE26E72CC10EAB00A1F088 /* LoadableImageView.swift */,
+				C642B6612CCD1B120083A6C1 /* Component */,
+				C642B6602CCD1B050083A6C1 /* Feature */,
 				C6BE26CF2CC0F1D100A1F088 /* Assets.xcassets */,
 				C6BE26D12CC0F1D100A1F088 /* Preview Content */,
 			);
